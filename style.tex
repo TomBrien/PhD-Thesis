@@ -1,0 +1,502 @@
+% *************** Document style definitions ***************
+% ******************************************************************
+% This file defines the document design.
+% ******************************************************************
+
+% *************** Fixes for packages  ***************
+\let\ordinal\relax
+\let\printglossary\relax
+\let\theglossary\relax
+\let\endtheglossary\relax
+
+% *************** Load packages ***************
+%First Wave
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[natbib=true, backend=biber, %
+				style=authoryear, dashed=false,%
+				backref=true, maxbibnames=15, %
+				uniquelist=minyear, sorting=nyt]{biblatex}
+\usepackage{bigints}
+\usepackage{booktabs}
+\usepackage{calc}
+\usepackage{datetime}
+\usepackage{enumitem}
+\usepackage{epsfig}
+\usepackage[gen]{eurosym}
+%\usepackage[perpage]{footmisc}
+\usepackage[figuresright]{rotating}
+\usepackage{fouriernc}
+\usepackage{fmtcount}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage[version=3]{mhchem}
+\usepackage{microtype}
+\usepackage{refcount}
+\usepackage{silence}
+\usepackage{siunitx}
+\usepackage{stmaryrd}
+\usepackage{tabularx}
+\usepackage[flushleft]{threeparttable}
+\usepackage{url}
+\usepackage{units}
+\usepackage{upgreek}
+\usepackage{xcolor}
+%Second Wave
+\usepackage[colorinlistoftodos, obeyFinal]{todonotes}
+
+% *************** Enable index generation ***************
+%\makeindex
+
+% *************** Some colour definitions ***************
+\definecolor{col:greenyellow}   {cmyk}{0.15, 0   , 0.69, 0   }
+\definecolor{col:yellow}        {cmyk}{0   , 0   , 1   , 0   }
+\definecolor{col:goldenrod}     {cmyk}{0   , 0.10, 0.84, 0   }
+\definecolor{col:dandelion}     {cmyk}{0   , 0.29, 0.84, 0   }
+\definecolor{col:apricot}       {cmyk}{0   , 0.32, 0.52, 0   }
+\definecolor{col:peach}         {cmyk}{0   , 0.50, 0.70, 0   }
+\definecolor{col:melon}         {cmyk}{0   , 0.46, 0.50, 0   }
+\definecolor{col:yelloworange}  {cmyk}{0   , 0.42, 1   , 0   }
+\definecolor{col:orange}        {cmyk}{0   , 0.61, 0.87, 0   }
+\definecolor{col:burntorange}   {cmyk}{0   , 0.51, 1   , 0   }
+\definecolor{col:bittersweet}   {cmyk}{0   , 0.75, 1   , 0.24}
+\definecolor{col:redorange}     {cmyk}{0   , 0.77, 0.87, 0   }
+\definecolor{col:mahogany}      {cmyk}{0   , 0.85, 0.87, 0.35}
+\definecolor{col:maroon}        {cmyk}{0   , 0.87, 0.68, 0.32}
+\definecolor{col:brickred}      {cmyk}{0   , 0.89, 0.94, 0.28}
+\definecolor{col:red}           {cmyk}{0   , 1   , 1   , 0   }
+\definecolor{col:orangered}     {cmyk}{0   , 1   , 0.50, 0   }
+\definecolor{col:rubinered}     {cmyk}{0   , 1   , 0.13, 0   }
+\definecolor{col:wildstrawberry}{cmyk}{0   , 0.96, 0.39, 0   }
+\definecolor{col:salmon}        {cmyk}{0   , 0.53, 0.38, 0   }
+\definecolor{col:carnationpink} {cmyk}{0   , 0.63, 0   , 0   }
+\definecolor{col:magenta}       {cmyk}{0   , 1   , 0   , 0   }
+\definecolor{col:violetred}     {cmyk}{0   , 0.81, 0   , 0   }
+\definecolor{col:rhodamine}     {cmyk}{0   , 0.82, 0   , 0   }
+\definecolor{col:mulberry}      {cmyk}{0.34, 0.90, 0   , 0.02}
+\definecolor{col:redviolet}     {cmyk}{0.07, 0.90, 0   , 0.34}
+\definecolor{col:fuchsia}       {cmyk}{0.47, 0.91, 0   , 0.08}
+\definecolor{col:lavender}      {cmyk}{0   , 0.48, 0   , 0   }
+\definecolor{col:thistle}       {cmyk}{0.12, 0.59, 0   , 0   }
+\definecolor{col:orchid}        {cmyk}{0.32, 0.64, 0   , 0   }
+\definecolor{col:darkorchid}    {cmyk}{0.40, 0.80, 0.20, 0   }
+\definecolor{col:purple}        {cmyk}{0.45, 0.86, 0   , 0   }
+\definecolor{col:plum}          {cmyk}{0.50, 1   , 0   , 0   }
+\definecolor{col:violet}        {cmyk}{0.79, 0.88, 0   , 0   }
+\definecolor{col:royalpurple}   {cmyk}{0.75, 0.90, 0   , 0   }
+\definecolor{col:blueviolet}    {cmyk}{0.86, 0.91, 0   , 0.04}
+\definecolor{col:periwinkle}    {cmyk}{0.57, 0.55, 0   , 0   }
+\definecolor{col:cadetblue}     {cmyk}{0.62, 0.57, 0.23, 0   }
+\definecolor{col:cornflowerblue}{cmyk}{0.65, 0.13, 0   , 0   }
+\definecolor{col:midnightblue}  {cmyk}{0.98, 0.13, 0   , 0.43}
+\definecolor{col:navyblue}      {cmyk}{0.94, 0.54, 0   , 0   }
+\definecolor{col:royalblue}     {cmyk}{1   , 0.50, 0   , 0   }
+\definecolor{col:blue}          {cmyk}{1   , 1   , 0   , 0   }
+\definecolor{col:cerulean}      {cmyk}{0.94, 0.11, 0   , 0   }
+\definecolor{col:cyan}          {cmyk}{1   , 0   , 0   , 0   }
+\definecolor{col:processblue}   {cmyk}{0.96, 0   , 0   , 0   }
+\definecolor{col:skyblue}       {cmyk}{0.62, 0   , 0.12, 0   }
+\definecolor{col:turquoise}     {cmyk}{0.85, 0   , 0.20, 0   }
+\definecolor{col:tealblue}      {cmyk}{0.86, 0   , 0.34, 0.02}
+\definecolor{col:aquamarine}    {cmyk}{0.82, 0   , 0.30, 0   }
+\definecolor{col:bluegreen}     {cmyk}{0.85, 0   , 0.33, 0   }
+\definecolor{col:emerald}       {cmyk}{1   , 0   , 0.50, 0   }
+\definecolor{col:junglegreen}   {cmyk}{0.99, 0   , 0.52, 0   }
+\definecolor{col:seagreen}      {cmyk}{0.69, 0   , 0.50, 0   }
+\definecolor{col:green}         {cmyk}{1   , 0   , 1   , 0   }
+\definecolor{col:forestgreen}   {cmyk}{0.91, 0   , 0.88, 0.12}
+\definecolor{col:pinegreen}     {cmyk}{0.92, 0   , 0.59, 0.25}
+\definecolor{col:limegreen}     {cmyk}{0.50, 0   , 1   , 0   }
+\definecolor{col:yellowgreen}   {cmyk}{0.44, 0   , 0.74, 0   }
+\definecolor{col:springgreen}   {cmyk}{0.26, 0   , 0.76, 0   }
+\definecolor{col:olivegreen}    {cmyk}{0.64, 0   , 0.95, 0.40}
+\definecolor{col:rawsienna}     {cmyk}{0   , 0.72, 1   , 0.45}
+\definecolor{col:sepia}         {cmyk}{0   , 0.83, 1   , 0.70}
+\definecolor{col:brown}         {cmyk}{0   , 0.81, 1   , 0.60}
+\definecolor{col:tan}           {cmyk}{0.14, 0.42, 0.56, 0   }
+\definecolor{col:gray}          {cmyk}{0   , 0   , 0   , 0.50}
+\definecolor{col:black}         {cmyk}{0   , 0   , 0   , 1   }
+\definecolor{col:white}         {cmyk}{0   , 0   , 0   , 0   } 
+
+% *************** Enable hyperlinks in PDF documents ***************
+\ifpdf
+ \pdfcompresslevel=9
+   \usepackage[plainpages=false,pdfpagelabels,bookmarksnumbered,hidelinks,%
+   %colorlinks=true,% colour link text in PDF AND print
+   %ocgcolorlinks=true,% colour links in PDF only, buggy. Comment both for print
+   linkcolor=col:red,%
+   citecolor=col:green,%
+   %filecolor=col:maroon,%
+   %pagecolor=col:red,%
+   urlcolor=col:royalblue,%
+   pdftex,%
+   unicode,%
+   breaklinks=true,%
+   %pagebackref=true
+   ]{hyperref} 
+    %\input supp-mis.tex
+    %\input supp-pdf.tex
+    %\pdfimageresolution=600
+    %\usepackage{thumbpdf} 
+\else
+    \usepackage{hyperref}
+\fi
+
+\usepackage{memhfixc}
+%\renewcommand*\backref[1]{\ifx#1\relax \else cited pg. #1 \fi}
+%\renewcommand*{\backref}[1]{}
+%\renewcommand*{\backrefalt}[4]{%
+%\ifcase #1 %
+%	% case: not cited
+%	Not cited.
+%	\or
+%	% case: cited on exactly one page
+%	Cited on page~#2.%
+%	\else
+%	% case: cited on multiple pages
+%	Cited on pages~#2.
+%\fi}
+% *************** Page layout ***************
+\settypeblocksize{*}{32pc}{1.5} %height, width, ratio
+%
+\setlrmargins{*}{1.6in}{*} %spine, edge, ratio
+\setulmargins{1.8in}{*}{*} %upper, lower, ratio
+%
+%\setheadfoot{\onelineskip}{2\onelineskip}
+%\setheaderspaces{*}{2\onelineskip}{*}
+%
+%\def\baselinestretch{1.25}
+\OnehalfSpacing
+%
+\checkandfixthelayout
+\fixpdflayout 
+%
+% *************** Chapter and section style ***************
+%\makechapterstyle{mychapterstyle}{%
+%    %\renewcommand{\chapnamefont}{\LARGE\sffamily\bfseries}% Style default
+%	 %\renewcommand{\chapnumfont}{\LARGE\sffamily\bfseries}% Style default
+%    %\renewcommand{\chaptitlefont}{\Huge\sffamily\bfseries}% Style default
+%    \renewcommand{\chaptitlefont}{\Huge\scshape \bfseries}%
+%	 %\renewcommand{\printchaptertitle}[1]{% Style default
+%    %    \chaptitlefont\hrule height 0.5pt \vspace{1em}%
+%    %    {##1}\vspace{1em}\hrule height 0.5pt%
+%    %    }%
+%	 \renewcommand{\printchaptertitle}[1]{%
+%			\chaptitlefont {##1} }
+%    \renewcommand{\printchapternum}{%
+%        \chapnumfont\thechapter%
+%        }%
+%}
+
+%\chapterstyle{mychapterstyle}
+\chapterstyle{brotherton}
+\makeheadrule{headings}{\textwidth}{0.5pt}
+
+\makepsmarks{headings}{%
+\createmark{chapter}{left}{shownumber}{Chapter \ }{. \ }
+\createmark{section}{right}{shownumber}{}{ \ }
+\createplainmark{toc}{both}{\contentsname}
+\createplainmark{lof}{both}{\listfigurename}
+\createplainmark{lot}{both}{\listtablename}
+\createplainmark{bib}{both}{\bibname}
+\createplainmark{index}{both}{\indexname}
+\createplainmark{glossary}{both}{\glossaryname}}
+
+%\setsecheadstyle{\Large\sffamily\bfseries}
+\setsecheadstyle{\raggedright\Large\scshape\bfseries}
+%\setsubsecheadstyle{\large\sffamily\bfseries}
+\setsubsecheadstyle{\raggedright\large\scshape\bfseries}
+%\setsubsubsecheadstyle{\normalfont\sffamily\bfseries}
+\setsubsubsecheadstyle{\raggedright\normalfont\scshape\bfseries}
+%\setparaheadstyle{\normalfont\sffamily}
+\setparaheadstyle{\raggedright\normalfont\scshape}
+
+%\makeevenhead{headings}{\thepage}{}{\small\slshape\leftmark}
+%\makeoddhead{headings}{\small\slshape\rightmark}{}{\thepage}
+\makeevenhead{headings}{\thepage}{}{\small\leftmark}
+\makeoddhead{headings}{\small\rightmark}{}{\thepage}
+
+
+% *************** Table of contents style ***************
+\setsecnumdepth{subsection}
+\maxsecnumdepth{subsection}
+\settocdepth{subsection}
+\maxtocdepth{subsection}
+
+% *************** Abstract ***************
+\abstractintoc
+%\abstractnum
+\renewcommand*{\abstractnamefont}{\normalfont\Huge\bfseries}
+\renewcommand*{\abstracttextfont}{\normalfont}
+\addtolength{\absleftindent}{-0.6\absleftindent}
+\addtolength{\absrightindent}{-0.6\absrightindent}
+
+% ********** Commands for epigraphs **********
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
+\setlength{\beforeepigraphskip}{1\baselineskip}
+\setlength{\afterepigraphskip}{1\baselineskip}
+\epigraphfontsize{\small\itshape}
+\renewcommand{\textflush}{flushright}
+
+\newcommand{\epitext}{\itshape}
+\newcommand{\epicite}[3]{\mbox{\upshape---%
+	\ifx&#1&%
+	% #1 is empty
+	\else%
+	% #1 is nonempty
+	#1,~%
+	\fi%
+	\ifx&#2&%
+	% #2 is empty
+	\else%
+	% #2 is nonempty
+	#2,~%
+	\fi}\!
+	\mbox{\textsc{#3}}}
+%\newcommand{\epititle}{\itshape}
+%\newcommand{\epidate}{\scshape}
+%\newcommand{\episkip}{\medskip}
+
+%\newcommand{\myepigraphworkdate}[4]{%
+%	\epigraph{\epitext #1}{\epiauthor #2, \epititle #3 \epidate(#4)}\noindent}
+%\newcommand{\myepigraphworkdate}[4]{%
+%	\epigraph{\epitext #1}{\epiauthor #2, \epititle #3 \epidate(#4)}\noindent}
+
+% *************** Enable Glossaries Generation ***************
+%\csundef{theglossary}
+\usepackage[acronym, toc, nonumberlist]{glossaries}
+%\renewcommand*{\glsseeformat}[3][\seename]{\\#1
+%\glsseelist{#2}}
+\renewcommand*{\seename}{See also:}
+\newglossarystyle{mygloss}{%
+\setglossarystyle{list}% base this style on the list style
+\renewcommand*{\glossentry}[2]{%
+\item[
+\glstarget{##1}{\glossentryname{##1}}% the entry name
+\ifglshassymbol{##1}% check if symbol exists
+{%
+,\space \glossentrysymbol{##1}% the symbol in brackets
+}%
+{}]% no symbol so do nothing
+\space \glossentrydesc{##1}\glspostdescription % the description
+\space ##2% the number list AND see list
+}%
+}
+\renewcommand*{\glsseeformat}[3][\seename]{
+\newline \emph{#1} \glsseelist{#2}}
+
+\makeglossaries
+\input{symbols.tex}
+
+% *************** PDF Meta Data ***************
+\hypersetup{
+	pdfinfo = {
+		Title = {The Silicon Cold Electron Bolomter},%
+		Author = {Thomas L. R. Brien},%
+		Keywords = {Bolometers} {Detectors} {Electron Cooling} {Instrumentation} 
+			{Far-Infrared} {Electron-Phonon Coupling} {THz Detectors}
+	}
+}
+\pdfcatalog{/PageLayout /TwoPageRight}
+
+% *************** Bibliography ***************
+
+\bibliography{bib.bib}
+
+\defbibnote{bibpreamble}{\epigraph{``If I have seen further, it is by standing on the shoulders of giants.''}{---\mbox{\textsc{Sir Isaac Newton}}}}
+
+\DefineBibliographyStrings{english}{%
+  backrefpage = {Cited on page},% originally "cited on page"
+  backrefpages = {Cited on pages},% originally "cited on pages"
+}
+
+\ExecuteBibliographyOptions{maxcitenames=2}
+
+\DeclareFieldFormat{citehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{#1}}
+
+\DeclareFieldFormat{textcitehyperref}{%
+  \DeclareFieldAlias{bibhyperref}{noformat}% Avoid nested links
+  \bibhyperref{%
+    #1%
+    \ifbool{cbx:parens}
+      {\bibcloseparen\global\boolfalse{cbx:parens}}
+      {}}}
+
+\patchcmd{\bibsetup}{\interlinepenalty=5000}{\interlinepenalty=10000}{}{}
+
+\makeatletter
+\newcommand{\tempmaxdown}[1]{\def\blx@maxcitenames{1}#1}
+\makeatother
+
+\savebibmacro{cite}
+\savebibmacro{textcite}
+
+\renewbibmacro*{cite}{%
+  \printtext[citehyperref]{%
+    \restorebibmacro{cite}%
+    \usebibmacro{cite}}}
+
+\renewbibmacro*{textcite}{%
+  \ifboolexpr{
+    ( not test {\iffieldundef{prenote}} and
+      test {\ifnumequal{\value{citecount}}{1}} )
+    or
+    ( not test {\iffieldundef{postnote}} and
+      test {\ifnumequal{\value{citecount}}{\value{citetotal}}} )
+  }
+    {\DeclareFieldAlias{textcitehyperref}{noformat}}
+    {}%
+  \printtext[textcitehyperref]{%
+    \restorebibmacro{textcite}%
+    \usebibmacro{textcite}}}
+
+%\DeclareCiteCommand{\cite}
+%  {\usebibmacro{prenote}}
+%  {\usebibmacro{citeindex}%
+%   \printtext[bibhyperref]{\usebibmacro{cite}}}
+%  {\multicitedelim}
+%  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand*{\cite}
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printtext[bibhyperref]{\usebibmacro{citeyear}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\parencite}[\mkbibparens]
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+    \printtext[bibhyperref]{\usebibmacro{cite}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand*{\parencite}[\mkbibparens]
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+    \printtext[bibhyperref]{\usebibmacro{citeyear}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\footcite}[\mkbibfootnote]
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+  \printtext[bibhyperref]{ \usebibmacro{cite}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\footcitetext}[\mkbibfootnotetext]
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printtext[bibhyperref]{\usebibmacro{cite}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\citeauthor}
+ {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printtext[bibhyperref]{\printnames{labelname}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\citefirstauthor}[\tempmaxdown]
+  {\usebibmacro{prenote}}
+  {\renewbibmacro*{name:andothers}{}%
+	\usebibmacro{citeindex}%
+ 	\printtext[bibhyperref]{\printnames{labelname}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+%\DeclareCiteCommand{\textcite}
+%  {\boolfalse{cbx:parens}}
+%  {\usebibmacro{citeindex}%
+%   \printtext[bibhyperref]{\usebibmacro{textcite}}}
+%  {\ifbool{cbx:parens}
+%    {\bibcloseparen\global\boolfalse{cbx:parens}}
+%     {}%
+%   \multicitedelim}
+%  {\usebibmacro{textcite:postnote}}
+
+\DeclareCiteCommand{\citeyear}
+ {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \printtext[bibhyperref]{\printdate}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\citetitle}
+ {\usebibmacro{prenote}}
+  {\ifciteindex
+     {\indexfield{indextitle}}
+     {}%
+   \printtext[bibhyperref]{\printfield[citetitle]{labeltitle}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+% *************** Signature lines ***************
+\newcommand*{\SignatureAndDate}{%
+\\[1.5\normalbaselineskip]
+\makebox[0.6\textwidth]{\hrulefill} \hfill\makebox[0.3\textwidth]{\hrulefill}%
+\\[0pt]
+\makebox[0.6\textwidth][l]{\small \textit{Signature (candidate)}}      \hfill\makebox[0.3\textwidth][l]{\small \textit{Date}}%
+}
+
+% *************** Other ***************
+
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\newdateformat{frontdate}{\protect{\monthname[\THEMONTH] \THEYEAR}}
+
+\newcommand{\reminder}[2][]{%
+	\todo[color=orange,#1]{#2}%
+}
+\newcommand{\todomaybe}[2][]{%
+	\todo[color=green!40,#1]{#2}%
+}
+\newcommand{\todourgent}[2][]{%
+	\todo[color=red!60,#1]{#2}%
+}
+\newcommand{\todoGLS}[2][]{%
+	\todo[color=blue!40,#1]{\textbf{Add glossary \mbox{entry}:} #2}%
+}
+\changecaptionwidth
+\captionwidth{0.90\textwidth}
+\usepackage[caption=false]{subfig}
+
+%\renewcommand{\thefootnote}{\arabic{footnote}}
+
+%upright partial symbol
+
+
+%Fix TodoNotes in footnotes
+\usepackage{marginnote}
+\renewcommand{\marginpar}{\marginnote}
+
+%Description - no indent, no topsep
+\setlist[description]{leftmargin=0cm,labelindent=0cm, topsep=6pt, 
+							itemsep=0pt, parsep=0pt}
+
+%Forbid hypanation across page break
+\brokenpenalty10000\relax
+
+%Kill  warnings
+\WarningFilter{latexfont}{Font shape} 
+\WarningFilter{latexfont}{Size substitutions}
+\pdfsuppresswarningpagegroup=1 %pagegroup warning
+
+
+% *************** Own commands ***************
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+\makeatletter
+\newcommand*{\Rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\newcommand{\chapterref}[1]{%
+	\hyperref[#1]{\Numberstringnum{\getrefnumber{#1}}}}
+\newcommand{\NEP}{\ensuremath{\mathit{NEP}}}
+
+% *************** End of document style definition ***************

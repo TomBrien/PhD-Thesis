@@ -1,0 +1,30 @@
+[0] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:323> INFO - Logfile is 'phd thesis.blg'
+[44] biber-MSWIN:274> INFO - === %a %b %e, %Y, %H:%M:%S
+[45] Biber.pm:333> INFO - Reading 'phd thesis.bcf'
+[150] Biber.pm:635> INFO - Found 108 citekeys in bib section 0
+[190] Biber.pm:3051> INFO - Processing section 0
+[226] Biber.pm:3189> INFO - Looking for bibtex format file 'bib.bib' for section 0
+[241] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[252] bibtex.pm:864> INFO - Found BibTeX data source 'bib.bib'
+[520] Utils.pm:144> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[520] Utils.pm:144> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[520] Utils.pm:144> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[520] Utils.pm:144> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[2418] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2419] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2419] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'en-US'
+[2419] Biber.pm:2932> INFO - No sort tailoring available for locale 'en-US'
+[3067] bbl.pm:517> INFO - Writing 'phd thesis.bbl' with encoding 'ascii'
+[3075] Utils.pm:144> WARN - The entry 'Bhatia1999' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3091] Utils.pm:144> WARN - The entry 'Griffin2006' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3103] Utils.pm:144> WARN - The entry 'Keithley220DS' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3125] Utils.pm:144> WARN - The entry 'Lamarre2010' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3132] Utils.pm:144> WARN - The entry 'Luukanaen2010' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3141] Utils.pm:144> WARN - The entry 'Monfardini2010' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3151] Utils.pm:144> WARN - The entry 'Pekola2004' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3159] Utils.pm:144> WARN - The entry 'Savin2003' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3162] Utils.pm:144> WARN - The entry 'Schottky1918' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3163] Utils.pm:144> WARN - The entry 'Schottky1939' has characters which cannot be encoded in 'ascii'. Recoding problematic characters into macros.
+[3169] bbl.pm:606> INFO - Output to phd thesis.bbl
+[3170] Biber.pm:106> INFO - WARNINGS: 14

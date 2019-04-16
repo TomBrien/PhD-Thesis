@@ -1,0 +1,94 @@
+\changetocdepth {2}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\contentsline {chapter}{Acknowledgements}{i}{chapter*.1}
+\contentsline {chapter}{Abstract}{iii}{section*.2}
+\contentsline {chapter}{Contents}{v}{section*.3}
+\contentsline {chapter}{List of Figures}{ix}{section*.4}
+\contentsline {chapter}{List of Tables}{xiii}{section*.5}
+\contentsline {chapter}{Acronyms}{xiv}{section*.6}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Astronomy}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Security}{5}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Bolometric Detectors}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}The Principle of a Bolometer}{7}{subsection.1.2.1}
+\contentsline {section}{\numberline {1.3}The History of Cold-Electron Bolometer Development}{8}{section.1.3}
+\contentsline {section}{\numberline {1.4}The Advantages \& Disadvantages of Cold-Electron Bolometers}{12}{section.1.4}
+\contentsline {section}{\numberline {1.5}Thesis Summary}{13}{section.1.5}
+\contentsline {chapter}{\chapternumberline {2}The Theory of Cold-Electron Bolometers}{16}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{16}{section.2.1}
+\contentsline {section}{\numberline {2.2}Tunnelling Barriers}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Formation of Insulating Layers}{17}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}The Tunnelling Current}{22}{section.2.3}
+\contentsline {section}{\numberline {2.4}The Cooling Power}{30}{section.2.4}
+\contentsline {section}{\numberline {2.5}Electron-Phonon Interactions}{35}{section.2.5}
+\contentsline {section}{\numberline {2.6}The Responsivity}{38}{section.2.6}
+\contentsline {section}{\numberline {2.7}The Sources of Electrical Noise}{43}{section.2.7}
+\contentsline {section}{\numberline {2.8}The Noise-Equivalent Power}{48}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Photon Noise}{53}{subsection.2.8.1}
+\contentsline {chapter}{\chapternumberline {3}The Properties of Doped and Strained Silicon}{55}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{55}{section.3.1}
+\contentsline {section}{\numberline {3.2}Intrinsic Semiconductors}{55}{section.3.2}
+\contentsline {section}{\numberline {3.3}Doped Semiconductors}{57}{section.3.3}
+\contentsline {section}{\numberline {3.4}Carrier Mobility}{60}{section.3.4}
+\contentsline {section}{\numberline {3.5}Strained Semiconductors}{63}{section.3.5}
+\contentsline {chapter}{\chapternumberline {4}Detector Design \& Fabrication}{65}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{65}{section.4.1}
+\contentsline {section}{\numberline {4.2}Detector Design}{65}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Antenna Design}{66}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Detector Fabrication}{69}{section.4.3}
+\contentsline {section}{\numberline {4.4}Material Properties}{73}{section.4.4}
+\contentsline {chapter}{\chapternumberline {5}Cryogenic Testbeds}{74}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{74}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sorption Refrigerators}{75}{section.5.2}
+\contentsline {section}{\numberline {5.3}Systems Used in This Work}{78}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Pulse-Tube-Cooled Cryostat with He10 Sorption Refrigerator}{78}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Liquid Helium Cryostat with He7 Sorption Refrigerator}{81}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Detector Holder}{83}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}Detector Readout}{87}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{87}{section.6.1}
+\contentsline {section}{\numberline {6.2}Requirements of the Readout System}{88}{section.6.2}
+\contentsline {section}{\numberline {6.3}Initial Testing System}{89}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Initial Readout System}{89}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Initial Bias System}{95}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Revisions to the Initial Bias System}{98}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Changes Made and Advantages}{98}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Performance of the Updated Bias System}{101}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Final Testing System}{104}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Reason for Replacement}{104}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Final Readout System}{104}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Final Bias System}{111}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Cross-Correlated Noise Measurement}{115}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Convolution}{115}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Cross Correlation}{116}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Application of Cross Correlation to Detector Readout}{116}{subsection.6.6.3}
+\contentsline {section}{\numberline {6.7}Summary of Readout and Biasing Systems}{122}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Results: Dark Measurements}{124}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{124}{section.7.1}
+\contentsline {section}{\numberline {7.2}Unstrained Silicon}{125}{section.7.2}
+\contentsline {section}{\numberline {7.3}Strained Silicon}{130}{section.7.3}
+\contentsline {section}{\numberline {7.4}Comparison of Unstrained \& Strained Detectors}{133}{section.7.4}
+\contentsline {chapter}{\chapternumberline {8}Results: Optical Measurements}{136}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduction}{136}{section.8.1}
+\contentsline {section}{\numberline {8.2}Unstrained Silicon}{137}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Current-Voltage Measurements}{137}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Responsivity}{140}{subsection.8.2.2}
+\contentsline {subsection}{\numberline {8.2.3}Noise Measurements}{142}{subsection.8.2.3}
+\contentsline {subsection}{\numberline {8.2.4}Spectral Response}{149}{subsection.8.2.4}
+\contentsline {section}{\numberline {8.3}Strained Silicon}{149}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Current-Voltage Measurements}{149}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Responsivity}{152}{subsection.8.3.2}
+\contentsline {subsection}{\numberline {8.3.3}Noise Measurements}{153}{subsection.8.3.3}
+\contentsline {subsection}{\numberline {8.3.4}Spectral Response}{158}{subsection.8.3.4}
+\contentsline {subsection}{\numberline {8.3.5}Chopped-Source Measurements}{159}{subsection.8.3.5}
+\contentsline {section}{\numberline {8.4}Detailed Antenna Simulations}{161}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Basic Model: Lumped Port, Infinite Silicon}{162}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Modelling the Antenna and Lens}{163}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}Polarisation Model using Wave Port}{164}{subsection.8.4.3}
+\contentsline {subsection}{\numberline {8.4.4}Introduction of DC Cuts}{165}{subsection.8.4.4}
+\contentsline {subsection}{\numberline {8.4.5}Allowing for Loss in the Aluminium}{166}{subsection.8.4.5}
+\contentsline {subsection}{\numberline {8.4.6}Summary of Findings}{167}{subsection.8.4.6}
+\contentsline {section}{\numberline {8.5}Spectral Study of Silicon Material}{168}{section.8.5}
+\contentsline {section}{\numberline {8.6}Summary of Detector Performance}{172}{section.8.6}
+\contentsline {chapter}{\chapternumberline {9}Conclusions}{173}{chapter.9}
+\contentsline {chapter}{Bibliography}{180}{section*.37}

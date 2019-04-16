@@ -1,0 +1,66 @@
+% *************** T. Brien Cardiff PhD Thesis Template ***************
+\let\theglossary\relax 
+\documentclass[11pt, a4paper, final, oneside]{memoir}
+\input{style.tex}
+
+\begin{document}
+% *************** Front matter ***************
+\frontmatter
+\pagenumbering{Alph}
+\input{front.tex}
+\clearpage %comment to suppress dedication
+\input{dedication.tex} %comment to suppress dedication
+\cleardoublepage
+
+% *************** Table of contents ***************
+\pagenumbering{roman}
+\pagestyle{plain}
+\input{ack/ack.tex} %comment to suppress acknowledgements
+\cleardoublepage %comment to suppress acknowledgements
+\input{abstract/abstract.tex}
+\cleardoublepage
+\input{statement.tex}
+\cleardoublepage
+\pagestyle{headings}
+\tableofcontents
+
+\input{back.tex}
+\cleardoublepage 
+%\renewcommand{\glsnamefont}[1]{\textmd{#1}}
+\printglossary[type=\acronymtype, title=Acronyms]
+% *************** Main matter ***************
+\mainmatter
+\pagenumbering{arabic}
+%\input{chap1/chap1.tex}
+%\input{chap2/chap2.tex}
+\input{chap_introduction/chap_introduction.tex}
+%\input{chap_concept/chap_concept.tex}
+\input{chap_theory/chap_theory.tex}
+\input{chap_material/chap_material.tex}
+\input{chap_design/chap_design.tex}
+\input{chap_testbeds/chap_testbeds.tex}
+\input{chap_readout/chap_readout.tex}
+\input{chap_darkResults/chap_darkResults.tex}
+\input{chap_opticalResults/chap_opticalResults.tex}
+\input{chap_conclusion/chap_conclusion.tex}
+
+% *************** Bibliography ***************
+%{\small\bibliography{Bib}}
+\renewcommand*{\bibfont}{\small}
+\printbibliography[prenote=bibpreamble]
+
+%\cleardoublepage
+%\renewcommand{\glsnamefont}[1]{\makefirstuc{#1}}
+%\printglossary[type=main, title=Glossary, style=mygloss]
+
+% *************** Appendixes ***************
+%\appendix
+%\appendixpage*
+%\input{app1/app1.tex}
+
+% *************** Back matter ***************
+%\backmatter
+
+%\cleardoublepage
+%\listoftodos
+\end{document}
